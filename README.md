@@ -19,6 +19,9 @@ A standard user (jdoe) was unable to log in due to repeated failed authenticatio
 ## Root Cause
 The primary issue was an account lockout triggered by multiple failed login attempts. A secondary issue was identified where the network adapter was disabled, which would have prevented network access even after successful authentication.
 
+## Troubleshooting Approach
+The incident was handled by addressing authentication issues before network connectivity issues. Since a user cannot access network resources without successful authentication, the account lockout was identified and resolved first. After restoring login access, network configuration was reviewed and corrected to ensure full service restoration.
+
 ## Resolution
 The account lockout condition was cleared using administrative privileges. After authentication was restored, the network adapter was re-enabled to resolve the connectivity issue.
 
